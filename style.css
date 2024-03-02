@@ -1,0 +1,161 @@
+
+.mainlogo {
+    width: fit-content;
+}
+
+@media only screen and (min-width: 768px) {
+    #marksheet {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        /* display: none; */
+    }
+    #comesoon {
+        display: none;
+    }
+    #main {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        width: fit-content;
+        padding-top: 50px;
+    }
+    .mainlogo {
+        width: 700px;
+        height: 150px;
+    }
+    .button {
+        margin: 10px ;
+        width: 400px;
+        height: 60px;
+        border-radius: 1px;
+        background-color: #E8F0FE;
+        color: black;
+        border-radius: 7px 2px;
+    }
+    #photu {
+        padding: 100px;
+        display: none;
+        width: fit-content;
+    }
+    .photuSubmit {
+        margin-top: 50px;
+        background-color: #8BA0BD;
+        border-radius: 2px 7px;
+        border-color: #667081;
+        width: fit-content ;
+        padding: 0 50px 0 50px;
+        height: 30px;
+    }
+    #linkInput {
+        width: fit-content;
+        height: 60px;
+        border-radius: 7px 2px;
+        border-color: #E8F0FD;
+        background-color: #E8F0FD;
+        border: 20px;
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #marksheet {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+    #main {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        width: fit-content;
+;
+    }
+    .button {
+        margin: 10px;
+        width: 200px;
+        height: 30px;
+        border-radius: 1px;
+        background-color: #E8F0FE;
+        color: black;
+    }
+}
+@media only screen and (max-width: 480px) {
+    
+    #comesoon {
+        display: none;
+    }
+    #main {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        width: fit-content;
+        padding-top: 50px;
+    }
+    .mainlogo {
+        width: 480px;
+        height: 50px;
+    }
+    .button {
+        margin: 10px ;
+        width: 200px;
+        height: 30px;
+        border-radius: 1px;
+        background-color: #E8F0FE;
+        color: black;
+        border-radius: 7px 2px;
+    }
+    #photu {
+        padding: 100px;
+        display: none;
+        width: fit-content;
+    }
+    .photuSubmit {
+        margin-top: 50px;
+        background-color: #8BA0BD;
+        border-radius: 2px 7px;
+        border-color: #667081;
+        width: fit-content ;
+        padding: 0 40px 0 40px;
+        height: 30px;
+    }
+    #linkInput {
+        width: fit-content;
+        height: 30px;
+        border-radius: 7px 2px;
+        border-color: #E8F0FD;
+        background-color: #E8F0FD;
+        border: 20px;
+        padding: 0 10px;
+    }
+}
+.homeMain {
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border: 50px;
+    border-color: black;    
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.body {
+    justify-content: center;
+    background-color: #DBE7FB;
+    align-items: center;
+}
+
+
+
+.main2 {
+    justify-content: center;
+    align-items: center;
+}

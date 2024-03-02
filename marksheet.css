@@ -1,0 +1,74 @@
+#marksheet {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.dataInput {
+    width: fit-content;
+    height: 50px;
+    border-radius: 7px 2px;
+    border-color: #E8F0FD;
+    background-color: #E8F0FD;
+    border: 20px;
+    padding: 0 10px;
+    margin-right: 10px;
+    font-size: medium;
+}
+.dataInputSub {
+    width: 390px;
+    height: 50px;
+    border-radius: 7px 2px;
+    border-color: #E8F0FD;
+    background-color: #E8F0FD;
+    border: 20px;
+    padding: 0 10px 0 10px;
+    margin-right: 10px;
+    font-size: medium;
+}
+#myForm {
+    text-align: center;
+    justify-content: center; 
+    align-items: center;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+    #marksheet {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        /* display: none; */
+    }
+    .mainlogo {
+        width: 700px;
+        height: 150px;
+    }
+    #main {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        width: fit-content;
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #marksheet {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+}

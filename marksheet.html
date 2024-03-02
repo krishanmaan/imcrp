@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="marksheet.css">
+</head>
+<body>
+    <nav class="logo">
+        <div class="mainlogo">
+            <img src="Photu/uemLogo_j280718.jpg" height="auto" width="100%">
+        </div>
+    </nav>
+    <form id="myForm">
+        <input class="dataInput" type="text" id="nameIP" name="nameIP" placeholder="Name">
+        <input class="dataInput" type="text" id="rollIP" name="rollIP" placeholder="Roll Number">
+        <input class="dataInput" type="text" id="degreeIP" name="degreeIP" placeholder="Degree">
+        <input class="dataInput" type="text" id="registrationIP" name="registrationIP" placeholder="Registration Number">
+        <input class="dataInput" type="text" id="streamIP" name="streamIP" placeholder="Stream"> 
+        <select class="dataInput" id="SemesterIP" name="SemesterIP" placeholder="Semester">
+            <option value="Semester1">Semester: 1</option>
+            <option value="Semester2">Semester: 2</option>
+            <option value="Semester3">Semester: 3</option>
+            <option value="Semester4">Semester: 4</option>
+            <option value="Semester5">Semester: 5</option>
+            <option value="Semester6">Semester: 6</option>
+            <option value="Semester7">Semester: 7</option>
+            <option value="Semester8">Semester: 8</option>
+            <option value="Semester9">Semester: 9</option>
+            <option value="Semester10">Semester: 10</option>
+            <option value="Semester11">Semester: 11</option>
+            <option value="Semester12">Semester: 12</option>
+        </select> <br>
+        <br>
+        <div id="originalDiv" class="originalDiv"> 
+            <select class="dataInput" id="typeIP" name="typeIP" placeholder="Type">
+                <option value="Th.">Th</option>
+                <option value="Pr.">Pr</option>
+            </select>
+            <input class="dataInput" type="text" id="subjectCodeIP" name="subjectCodeIP" placeholder="Subject Code">
+            <input class="dataInputSub" type="text" id="subjectNameIP" name="subjectNameIP" placeholder="Subject Name">
+            <select class="dataInput" id="creditIP" name="creditIP" placeholder="Credit">
+                <option value="1.00">1.00</option>
+                <option value="2.00">2.00</option>
+                <option value="3.00">3.00</option>
+            </select>
+            <select class="dataInput" id="letterGradeIP" name="letterGradeIP" placeholder="Letter Grade">
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="B+">B+</option>
+                <option value="C">C</option>
+                <option value="F">F</option>
+                <option value="O">O</option>
+            </select>
+            <select class="dataInput" id="creditIP" name="creditIP" placeholder="Credit">
+                <option value="2">2</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div> <br>
+        <button onclick="copyDivContent()">Copy Div Content</button>
+        <script>
+var originalContent = document.getElementById('originalDiv').innerHTML;
+var copyCount = 0;
+
+function copyDivContent() {
+  // Increment copy count
+  copyCount++;
+
+  // Get the original div content
+  var content = originalContent;
+
+  // Create a new div element
+  var newDiv = document.createElement('div');
+
+  // Set the content of the new div
+  newDiv.innerHTML = content;
+
+  // Add class and id to the copied div
+  newDiv.classList.add("copiedDiv");
+  newDiv.id =  copyCount;
+
+  // Change ids of elements inside the copied div
+  var inputs = newDiv.querySelectorAll('input, select');
+  inputs.forEach(function(input) {
+    input.id = input.id +  copyCount;
+    input.name = input.name +  copyCount;
+  });
+
+  // Append the new div after the original div
+  document.body.appendChild(newDiv);
+}
+</script>
+
+        <button type="button" onclick="showText()">Show Text</button>
+    </form>
+    
+    <script src="/script.js"></script>
+</body>
+</html>
